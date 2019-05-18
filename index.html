@@ -7,6 +7,7 @@
 	<title>Document</title>
 </head>
 <body>
+	
 	<div contenteditable="true" class="textEditor">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In laudantium maxime placeat vel voluptatem id dolore pariatur commodi inventore suscipit, blanditiis excepturi possimus voluptatum, adipisci explicabo at optio velit aliquid!</p>
 	</div>
@@ -15,15 +16,20 @@
 		<div contenteditable="true" class="textEditor">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In laudantium maxime placeat vel voluptatem id dolore pariatur commodi inventore suscipit, blanditiis excepturi possimus voluptatum, adipisci explicabo at optio velit aliquid!</p>
 		</div>
-		<p>Стасик жирный павук!</p>
 	</div>
-
 	<p class="container" class="textEditor" contenteditable="true">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, praesentium.
 	</p>
 
 	<button id="multiple_btn">СОЧНЫЙ МОЩНЫЙ БАТОН</button>
 
+	<script>
+		new HR(".container", {
+		    highlight: ["ipsum","amet"],
+		    replaceWith: ["after1","after2"],
+		    backgroundColor: "#c4f5aa"
+		})
+	</script>
 	<script src="https://api.glvrd.ru/v1/glvrd.js"></script>
 	<script src="js/script.js"></script>
 	<script src="src/hr.js"></script>

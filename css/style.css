@@ -3,3 +3,7 @@ body {
 	color: white;
 	font-family: sans-serif;
 }
+
+.textEditor {
+	width: 600px;
+}

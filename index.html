@@ -8,34 +8,18 @@
 </head>
 <body>
 
-	<div contenteditable="true" class="textEditor">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In laudantium maxime placeat vel voluptatem id dolore pariatur commodi inventore suscipit, blanditiis excepturi possimus voluptatum, adipisci explicabo at optio velit aliquid!</p>
+	<div id="highlight-div" class="my-class">
+	  <textarea id="highlight-ta">CSSScript</textarea>
 	</div>
 
-	<div class="window glvrd">
-		<div contenteditable="true" class="textEditor" id="textEditor">
-		<p class="multiple_example">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In laudantium maxime Lorem ipsum  placeat vel voluptatem id dolore pariatur commodi inventore suscipit, blanditiis excepturi possimus voluptatum, adipisci explicabo at optio velit aliquid!</p>
-		</div>
-	</div>
-	<button id="multiple_btn">СОЧНЫЙ МОЩНЫЙ БАТОН</button>
-
-	<script src="https://api.glvrd.ru/v1/glvrd.js"></script>
-	<script src="js/script.js"></script>
-	<script src="src/hr.js"></script>
+	<script src="src/highlight-ta.js"></script>
+	<script src="src/highlight-ta-proto.js"></script>
 
 	<script>
-	var multiple_btn=document.getElementById("multiple_btn");
-	multiple_btn.addEventListener("click",function() {
-		document.getElementById("textEditor").style.backgroundColor = "green";
-	         new HR(".multiple_example", {
-	           highlight: ["Lorem","ipsum"],
-	           // replaceWith: ["cat","birdy"],
-	           backgroundColor: "red"
-	         }).hr();
-	      },false);
-
+		var re = new RegExp('CSSScript', 'g');
+		var taHlght = highlightta(document.getElementById('highlight-div'), 
+		document.getElementById('highlight-ta'), "mark-style", re);
 	</script>
 
-	
 </body>
 </html>

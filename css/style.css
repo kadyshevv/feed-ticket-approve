@@ -7,3 +7,26 @@ body {
 .textEditor {
 	width: 600px;
 }
+
+mark {
+	background-color: rgba(200, 200, 200, 0.5);
+	border-radius: 2px;
+}
+
+.mark--bgrnd-clr--blue {
+  background-color: #87b5ff;
+  background-color: rgba(135, 181, 255, 0.5);
+	border-radius: 2px;
+}
+
+.mark--bgrnd-clr--red {
+  background-color: #91ff87;
+  background-color: rgba(249, 119, 122, 0.5);
+	border-radius: 2px;
+}
+
+.mark--bgrnd-clr--green {
+  background-color: #fb87ff;
+  background-color: rgba(118, 249, 127, 0.5);
+	border-radius: 2px;
+}
